@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+}
+
+:root {
+    --windows_1: #FFEFE1;
+    --windows_2: #0736C3;
+    --windows_3: #0871C2;
+    --windows_4: #1408C2;
+
+    --apple_1: #F5F5F7;
+    --apple_2: #D2D2D4;
+    --apple_3: #818182;
+    --apple_4: #818182;
+
+    --linux_header: #0F578A;
+    --linux_main: #1474B8;
+    --linux_2: #198DE0;
+    --linux_footer: #0B4065;
+
+    --contrast: #E01C19;
+}
+
+body {
+    background-color: var(--linux_2);
+}
+
+header {
+    text-align: center;
+    padding: 0px 4px;
+    background-image: linear-gradient(180deg, var(--windows_3), #074b80);
+    color: white
+}
+
+
+nav {
+    padding: 4px;
+    background-color: #074b80;
+}
+
+nav>a {
+    color: white;
+    padding-left: 6px;
+    transition-duration: 1s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--linux_2);
+}
+
+main {
+    padding: 16px;
+    min-width: 320px;
+    max-width: 800px;
+    margin: -16px auto;
+
+}
+
+main p,
+ul {
+    text-align: justify;
+    text-indent: 30px;
+    background-color: white;
+}
+
+main aside>a::after {
+    content: '\00A0\🔗';
+}
+
+div {
+    margin: 10px 0px;
+}
+
+main img {
+    width: 100%;
+}
+
+section {
+    background-color: white;
+    padding: 18px;
+}
+
+main section h3,
+h2 {
+    background-image: linear-gradient(to right, var(--linux_2), transparent);
+}
+
+main section>h1 {
+    background-image: linear-gradient(to right, var(--linux_2), transparent);
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+article {
+    padding: 16px;
+    min-width: 320px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+aside {
+    padding: 16px;
+    min-width: 320px;
+    max-width: 800px;
+    background-color: var(--apple_2);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+    margin-bottom: 16px;
+    margin-top: -16px;
+}
+
+aside>h3 {
+    background-color: var(--apple_4);
+    padding: 5px;
+    margin: -16px -16px 0px -16px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+article>ul {
+    list-style-position: inside;
+    background-color: white;
+}
+
+main aside a::after {
+    content: '\00A0\🔗';
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    background-color: var(--linux_footer);
+    color: white;
+    margin-top: 2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
