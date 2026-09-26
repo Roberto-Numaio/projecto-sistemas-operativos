@@ -32,9 +32,8 @@ I also experimented with **basic CSS styling**, even though CSS was still a topi
 📁 operating-systems/
 │
 ├── 📄 index.html
-├── 📄 pag1.html
-├── 📄 pag2.html
-├── 📄 pag3.html
+├── 📄 linux.html
+├── 📄 macos.html
 │
 └── 📄 style.css
 ```
